@@ -9,7 +9,6 @@ import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.RequestScoped;
 
 import com.otv.model.Supplier;
-import com.otv.model.User;
 import com.otv.user.dao.ISupplierDAO;
 
 

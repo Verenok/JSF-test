@@ -2,6 +2,7 @@
 	padding: 1px;	
 	display:inline-block;
 	float: left;
+	display:inline-block;
 }
 
 .pageHeaderForm {
@@ -9,16 +10,13 @@
 	display:inline-block;	
 }
 
-.headerMenu {
-	padding-lefft: 250px;	
+.pageHeaderMenue {
 	display:inline-block;
+	
 }
 
-.headerForm {
-
-	display:inline-block;	
-	float: right;
-}
 .pageHeaderForm td {
 	border: none;
 }
+
+.ui-menu{width:100%}

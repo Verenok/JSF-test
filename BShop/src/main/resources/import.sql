@@ -2,3 +2,6 @@
 
 INSERT INTO USER (ID,NAME,SURNAME) VALUES (100,'Sigizmund','Appolinarievich');
 INSERT INTO USER (ID,NAME,SURNAME) VALUES (101,'Izolda','Sigizmundovna');
+
+INSERT INTO Supplier (ID,NAME) VALUES (100,'Sigizmund');
+INSERT INTO USER (ID,NAME) VALUES (101,'Izolda');

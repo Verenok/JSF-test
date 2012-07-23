@@ -34,13 +34,36 @@ public class UserManagedBean implements Serializable {
     //Spring User Service is injected...
     @ManagedProperty(value = "#{UserService}")
     IUserService userService;
+    
+    public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getSurname() {
+		return surname;
+	}
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+	private int id;
+    private String name;
+    private String surname;
+
 
     List<User> userList;
     private UserDataModel model;
     User selected;
-    @PostConstruct
+//  @PostConstruct
 //   @RolesAllowed({"ADMIN"})
-   protected void postConstruct() {}  //
+ //protected void postConstruct() {}  
     /**
      * Add User
      *
@@ -48,12 +71,12 @@ public class UserManagedBean implements Serializable {
      */
     public String addUser() {
         try {
-            //         User user = new User();
-            //        user.setId(getId());
-            //         user.setName(getName());
-            //         user.setSurname(getSurname());
-            getUserService().addUser(selected);
-            return SUCCESS;
+           User user = new User();
+           user.setId(getId());
+           user.setName(getName());
+           user.setSurname(getSurname());
+           getUserService().addUser(selected);
+           return SUCCESS;
         } catch (DataAccessException e) {
             e.printStackTrace();
         }
